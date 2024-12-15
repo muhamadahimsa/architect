@@ -184,6 +184,12 @@ open.addEventListener('mouseenter', () => {
     duration: .7,
     color: '#000',
   })
+
+  gsap.to('.cursor', {
+    scale: 0,
+    duration: .75,
+    ease: 'power3.out',
+  })
 })
 
 open.addEventListener('mouseleave', () => {
@@ -196,6 +202,12 @@ open.addEventListener('mouseleave', () => {
   gsap.to('.open-btn', {
     duration: .7,
     color: '#fff',
+  });
+
+  gsap.to('.cursor', {
+    scale: 1,
+    duration: .75,
+    ease: 'power3.out',
   })
 });
 
@@ -326,4 +338,63 @@ tlIntro.to('.preview', {
   duration: 1,
   ease: 'power3.inOut',
   stagger: 0.05,
+})
+
+// Cursor
+const cursor = document.querySelector('.cursor');
+const cursorText = cursor.querySelector('p');
+
+const cursorWidth = cursor.offsetWidth / 2;
+const cursorHeight = cursor.offsetHeight / 2;
+
+let currentSlide = 1;
+const totalSlides = 6;
+
+const updateCursorClass = (xPosition) => {
+  const halfPageWidth = window.innerWidth / 2;
+  if (xPosition > halfPageWidth) {
+    if (currentSlide = totalSlides) {
+      cursorText.textContent = 'Next';
+      // cursorText.classList.add('ph-caret-circle-right');
+      cursor.style.display = 'flex';
+    } else {
+      cursor.style.display = 'none';
+    }
+  } else {
+    if (currentSlide > 1) {
+      cursorText.textContent = 'Prev';
+      // cursorText.classList.add('ph-caret-circle-left');
+      cursor.style.display = 'flex';
+    } else {
+      cursor.style.display = 'none';
+    }
+  }
+}
+
+document.addEventListener('mousemove', (e) => {
+  gsap.to(cursor, {
+    x: e.clientX - cursorWidth,
+    y: e.clientY - cursorHeight,
+    duration: 1,
+    opacity: 1,
+    ease: 'power3.out',
+  });
+
+  updateCursorClass(e.clientX);
+});
+
+document.querySelector('.slider-preview').addEventListener('mouseenter', () => {
+  gsap.to('.cursor', {
+    scale: 0,
+    duration: .75,
+    ease: 'power3.out',
+  })
+});
+
+document.querySelector('.slider-preview').addEventListener('mouseleave', () => {
+  gsap.to('.cursor', {
+    scale: 1,
+    duration: .75,
+    ease: 'power3.out',
+  })
 })
