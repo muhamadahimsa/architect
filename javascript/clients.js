@@ -21,7 +21,9 @@ const initLenis = () => {
 };
 
 const initScrollTrigger = () => {
-  const images = document.querySelectorAll(".client-hero-image img, .footer-img img");
+  const images = document.querySelectorAll(
+    ".client-hero-image img, .footer-img img"
+  );
 
   gsap.utils.toArray(images).forEach((image) => {
     gsap.set(image, { scale: 1.2 });
@@ -131,26 +133,32 @@ const overlay = document.querySelector(".info");
 const closeBtn = document.querySelector(".close-btn");
 
 const tl = gsap.timeline({ paused: true, overwrite: "auto" });
-gsap.set('.overflow p, .info-page-link', { y: '100%' });
+gsap.set(".overflow p, .info-page-link", { y: "100%" });
+
+tl.to(".client-video", {
+  autoAlpha: 0,
+  duration: 0.01,
+  ease: "power3.out",
+});
 
 tl.to(overlay, {
-  duration: .75,
+  duration: 0.75,
   display: "block",
   backdropFilter: "blur(20px)",
   ease: "power3.inOut",
 });
 
-tl.to('.info-wrapper', {
-  duration: .1,
+tl.to(".info-wrapper", {
+  duration: 0.1,
   display: "flex",
   ease: "power3.inOut",
 });
 
-tl.to('.overflow p, .info-page-link', {
-  y: '0%',
+tl.to(".overflow p, .info-page-link", {
+  y: "0%",
   duration: 1,
   stagger: 0.05,
-  ease: 'power3.inOut',
+  ease: "power3.inOut",
 });
 
 const open = document.querySelector(".nav-info");
@@ -162,65 +170,96 @@ closeBtn.addEventListener("click", () => {
   tl.reverse();
 });
 
-
 // Hover nav
-open.addEventListener('mouseenter', () => {
-  gsap.to('.nav-btn-overlay', {
-    duration: .5,
-    width: '100%',
+open.addEventListener("mouseenter", () => {
+  gsap.to(".nav-btn-overlay", {
+    duration: 0.5,
+    width: "100%",
     ease: "power3.inOut",
   });
 
-  gsap.to('.open-btn', {
-    duration: .7,
-    color: '#000',
-  })
-})
+  gsap.to(".open-btn", {
+    duration: 0.7,
+    color: "#000",
+  });
+});
 
-open.addEventListener('mouseleave', () => {
-  gsap.to('.nav-btn-overlay', {
-    duration: .5,
-    width: '0%',
+open.addEventListener("mouseleave", () => {
+  gsap.to(".nav-btn-overlay", {
+    duration: 0.5,
+    width: "0%",
     ease: "power3.inOut",
   });
 
-  gsap.to('.open-btn', {
-    duration: .7,
-    color: '#fff',
-  })
-})
+  gsap.to(".open-btn", {
+    duration: 0.7,
+    color: "#fff",
+  });
+});
 
 // Hover Info
-const infoPages = document.querySelectorAll('.info-page-link');
-const infoPagesOverlay = document.querySelectorAll('.info-page-overlay');
-const infoPagesLinks = document.querySelectorAll('.info-page-link > a');
+const infoPages = document.querySelectorAll(".info-page-link");
+const infoPagesOverlay = document.querySelectorAll(".info-page-overlay");
+const infoPagesLinks = document.querySelectorAll(".info-page-link > a");
 
 infoPages.forEach((link, index) => {
-  link.addEventListener('mouseenter', () => {
+  link.addEventListener("mouseenter", () => {
     gsap.to(infoPagesOverlay[index], {
-      duration: .5,
-      width: '100%',
+      duration: 0.5,
+      width: "100%",
       ease: "power3.inOut",
     });
-  
+
     gsap.to(infoPagesLinks[index], {
-      duration: .7,
-      color: '#fff',
-    })
-  })
-})
+      duration: 0.7,
+      color: "#fff",
+    });
+  });
+});
 
 infoPages.forEach((link, index) => {
-  link.addEventListener('mouseleave', () => {
+  link.addEventListener("mouseleave", () => {
     gsap.to(infoPagesOverlay[index], {
-      duration: .5,
-      width: '0%',
+      duration: 0.5,
+      width: "0%",
       ease: "power3.inOut",
     });
-  
+
     gsap.to(infoPagesLinks[index], {
-      duration: .7,
-      color: '#000',
-    })
-  })
-})
+      duration: 0.7,
+      color: "#000",
+    });
+  });
+});
+
+// Cursor
+const cursor = document.querySelector(".client-video");
+
+const cursorWidth = cursor.offsetWidth / 2;
+const cursorHeight = cursor.offsetHeight / 2;
+
+document.addEventListener("mousemove", (e) => {
+  gsap.to(cursor, {
+    x: e.clientX - cursorWidth,
+    y: e.clientY - cursorHeight,
+    duration: 1,
+    opacity: 1,
+    ease: "power3.out",
+  });
+});
+
+document.querySelector(".nav-info").addEventListener("mouseenter", () => {
+  gsap.to(cursor, {
+    scale: 0,
+    duration: 0.75,
+    ease: "power3.out",
+  });
+});
+
+document.querySelector(".nav-info").addEventListener("mouseleave", () => {
+  gsap.to(cursor, {
+    scale: 1,
+    duration: 0.75,
+    ease: "power3.out",
+  });
+});

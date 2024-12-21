@@ -9,7 +9,8 @@ body {
   font-style: normal;
   color: var(--secondary);
 }
-img {
+img,
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -71,7 +72,7 @@ nav span {
 .client-hero-image{
   position: relative;
   width: inherit;
-  height: 200vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -84,7 +85,7 @@ nav span {
 }
 .client-title{
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -96,19 +97,47 @@ nav span {
 }
 .client-desc{
   position: absolute;
-  top: 70%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  bottom: 2.5em;
+  right: 2.5em;
   z-index: 1;
+  background: #fff;
+  padding: 1.5em;
+  width: 16vw;
 }
 .client-desc p{
-  color: #f0e9e9;
-  font-size: 16px;
+  color: #000000;
+  font-size: 13px;
   font-weight: 400;
   text-transform: none;
+  line-height: 15px;
 }
 .client-desc p:nth-child(1){
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 32px;
+}
+.client-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  padding: .5em;
+  background: #fff;
+}
+.client-video-clone{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  padding: .5em;
+  background: #fff;
+  display: none;
 }
 
 /* Page-2 */
@@ -366,27 +395,36 @@ nav span {
   .client-title{
     width: 100%;
     text-align: center;
-    top: 34%;
+    display: none;
   }
   .client-title h2{
     font-size: 40px;
   }
   .client-hero-image{
-    height: 150vh;
+    height: 100vh;
   }
   .client-desc{
-    top: 80%;
-    left: 35%;
-  }
-  .ivan{
-    left: 25%;
+    width: 47vw;
+    padding: 4em;
+    bottom: 6em;
+    right: 6em;
   }
   .client-desc p{
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 11px;
+    line-height: 13px;
   }
   .client-desc p:nth-child(1){
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .client-video{
+    padding: 2em;
+    display: none;
+  }
+  .client-video-clone{
+    display: block;
+    padding: 2em;
+    /* width: 150px; */
+    /* height: 150px; */
   }
 
   /* Page2 */
