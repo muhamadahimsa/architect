@@ -22,13 +22,13 @@ span {
   font-weight: 500;
   text-decoration: none;
 }
-.overflow{
+.overflow {
   overflow: hidden;
 }
 
 /* Nav */
 nav {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -47,13 +47,13 @@ nav span {
   position: relative;
   z-index: 1;
 }
-.nav-info{
+.nav-info {
   position: relative;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
 }
-.nav-btn-overlay{
+.nav-btn-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -63,59 +63,59 @@ nav span {
 }
 
 /* Client Hero */
-.client-hero{
+.client-hero {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
 }
-.client-hero-image{
+.client-hero-image {
   position: relative;
   width: inherit;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
-.client-hero-image img{
+.client-hero-image img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin: auto;
 }
-.client-title{
+.client-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.client-title h2{
+.client-title h2 {
   color: #f0e9e9;
   font-size: 60px;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
 }
-.client-desc{
+.client-desc {
   position: absolute;
   bottom: 2.5em;
   right: 2.5em;
   z-index: 1;
   background: #fff;
-  padding: 1.5em;
+  padding: 2em;
   width: 16vw;
 }
-.client-desc p{
+.client-desc p {
   color: #000000;
   font-size: 13px;
   font-weight: 400;
   text-transform: none;
   line-height: 15px;
 }
-.client-desc p:nth-child(1){
+.client-desc p:nth-child(1) {
   font-size: 30px;
   line-height: 32px;
 }
-.client-video{
+.client-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,10 +123,10 @@ nav span {
   z-index: 2;
   width: 120px;
   height: 120px;
-  padding: .5em;
+  padding: 0.5em;
   background: #fff;
 }
-.client-video-clone{
+.client-video-clone {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -135,7 +135,7 @@ nav span {
   z-index: 2;
   width: 120px;
   height: 120px;
-  padding: .5em;
+  padding: 0.5em;
   background: #fff;
   display: none;
 }
@@ -145,7 +145,7 @@ nav span {
   position: relative;
   height: 100%;
   width: 100%;
-  margin-top: 40vh;
+  margin-top: 300px;
 }
 .container2 {
   height: 100%;
@@ -241,12 +241,12 @@ nav span {
   overflow: hidden;
   margin-top: 10em;
 }
-.footer-img{
+.footer-img {
   position: relative;
   width: 100vw;
   height: 150vh;
 }
-.footer-title{
+.footer-title {
   position: absolute;
   top: 65%;
   left: 50%;
@@ -259,18 +259,18 @@ nav span {
   text-align: center;
   /* mix-blend-mode: difference; */
 }
-.footer-title > div{
+.footer-title > div {
   position: relative;
   width: fit-content;
   height: fit-content;
   overflow: hidden;
   cursor: pointer;
 }
-.footer-title > div h3{
+.footer-title > div h3 {
   position: relative;
   z-index: 1;
 }
-.footer-title-overlay{
+.footer-title-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -278,28 +278,28 @@ nav span {
   height: 100%;
   background: #fff;
 }
-.footer-title h3{
+.footer-title h3 {
   color: #f0e9e9;
   font-size: 60px;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
 }
-.footer-title p{
+.footer-title p {
   color: #fff;
   font-size: 16px;
   position: relative;
-  top: -.5em;
+  top: -0.5em;
 }
-.footer-bottom{
+.footer-bottom {
   position: absolute;
   bottom: 4em;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
-.top{
+.top {
   cursor: pointer;
 }
-.top span{
+.top span {
   color: #f0e9e9;
   text-transform: none;
   font-size: 16px;
@@ -314,24 +314,24 @@ nav span {
   z-index: 100;
   display: none;
 }
-.info-wrapper{
+.info-wrapper {
   display: none;
   flex-direction: column;
   height: 100svh;
   position: relative;
 }
-.info-nav{
+.info-nav {
   position: absolute;
   top: 2.5em;
   right: 2.5em;
   overflow: hidden;
 }
-.info-nav p{
+.info-nav p {
   font-size: 14px;
   cursor: pointer;
   text-transform: none;
 }
-.info-desc{
+.info-desc {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -341,39 +341,39 @@ nav span {
   width: 50vw;
 }
 .info-desc p,
-.info-desc a{
+.info-desc a {
   font-size: 14px;
   text-transform: none;
   color: #000;
 }
-.info-left{
+.info-left {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
-.info-right{
+.info-right {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .info-pages,
-.info-links{
+.info-links {
   display: flex;
   gap: 5em;
   overflow: hidden;
 }
-.info-page-link{
+.info-page-link {
   position: relative;
   width: fit-content;
   height: fit-content;
   overflow: hidden;
   cursor: pointer;
 }
-.info-page-link a{
+.info-page-link a {
   position: relative;
   z-index: 1;
 }
-.info-page-overlay{
+.info-page-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -392,35 +392,35 @@ nav span {
   }
 
   /* Hero */
-  .client-title{
+  .client-title {
     width: 100%;
     text-align: center;
     display: none;
   }
-  .client-title h2{
+  .client-title h2 {
     font-size: 40px;
   }
-  .client-hero-image{
+  .client-hero-image {
     height: 100vh;
   }
-  .client-desc{
-    width: 47vw;
-    padding: 4em;
+  .client-desc {
+    width: 49vw;
+    padding: 6em;
     bottom: 6em;
     right: 6em;
   }
-  .client-desc p{
+  .client-desc p {
     font-size: 11px;
     line-height: 13px;
   }
-  .client-desc p:nth-child(1){
+  .client-desc p:nth-child(1) {
     font-size: 25px;
   }
-  .client-video{
+  .client-video {
     padding: 2em;
     display: none;
   }
-  .client-video-clone{
+  .client-video-clone {
     display: block;
     padding: 2em;
     /* width: 150px; */
@@ -461,40 +461,40 @@ nav span {
   }
 
   /* Footer */
-  .footer-img{
+  .footer-img {
     height: 100vh;
   }
-  .footer-title{
+  .footer-title {
     top: 50%;
   }
-  .footer-title h3{
+  .footer-title h3 {
     font-size: 40px;
   }
-  .footer-title p{
+  .footer-title p {
     top: 0;
   }
-  .footer-bottom{
+  .footer-bottom {
     bottom: 5%;
   }
 
   /* Info */
-  .info-nav{
+  .info-nav {
     top: 6em;
     right: 6em;
   }
-  .info-nav p{
+  .info-nav p {
     font-size: 13px;
   }
-  .info-left{
+  .info-left {
     display: none;
   }
-  .info-desc{
+  .info-desc {
     width: 70vw;
   }
-  .info-desc p{
+  .info-desc p {
     font-size: 13px;
   }
-  .info-right{
+  .info-right {
     gap: 5em;
   }
 }

@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html,
-body{
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -13,7 +13,7 @@ body{
   font-style: normal;
   cursor: none;
 }
-img{
+img {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@ img{
 }
 h1,
 p,
-a{
+a {
   color: #fff;
   text-decoration: none;
 }
@@ -34,15 +34,15 @@ span {
   text-transform: uppercase;
   font-weight: 500;
 }
-.overflow{
+.overflow {
   overflow: hidden;
 }
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-.cursor{
+.cursor {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,11 +57,11 @@ span {
   pointer-events: none;
   z-index: 2;
 }
-.cursor p{
+.cursor p {
   font-size: 12px;
   text-transform: uppercase;
 }
-.story-img{
+.story-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -69,14 +69,14 @@ span {
   height: 100vh;
   overflow: hidden;
 }
-.img{
+.img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.story-content{
+.story-content {
   position: absolute;
   padding: 2em;
   width: 100%;
@@ -85,28 +85,28 @@ span {
   flex-direction: column;
   gap: 12em;
 }
-.row:nth-child(1){
+.row:nth-child(1) {
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 0.5em;
   position: absolute;
   bottom: 7.7em;
 }
-.indices{
+.indices {
   width: 25%;
   height: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: .25em;
+  gap: 0.25em;
 }
-.index{
+.index {
   position: relative;
   width: 100%;
   height: 2px;
   background: rgba(255, 255, 255, 0.25);
 }
-.index-highlight{
+.index-highlight {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,31 +115,31 @@ span {
   background: #fff;
   transform: scaleX(100%);
 }
-.profile{
+.profile {
   width: 100vw;
   height: 30px;
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
 }
-.profile-icon{
+.profile-icon {
   position: relative;
   width: 10%;
   height: 6.6em;
   overflow: hidden;
 }
-.profile-name{
+.profile-name {
   position: relative;
   width: 100%;
   height: 20px;
-  margin-top: .65em;
-  margin-left: .75em;
+  margin-top: 0.65em;
+  margin-left: 0.75em;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   /* display: none; */
 }
-.profile-name p{
+.profile-name p {
   font-size: 16px;
 }
-.row:nth-child(2){
+.row:nth-child(2) {
   width: 15em;
   display: flex;
   flex-direction: column;
@@ -150,42 +150,42 @@ span {
   padding: 1em;
   cursor: pointer;
 }
-.title-row{
+.title-row {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 20px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-.title-row h1{
+.title-row h1 {
   color: #000;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   font-weight: 500;
 }
 .title-row:nth-child(2),
-.title-row:nth-child(3){
+.title-row:nth-child(3) {
   height: 16px;
 }
 .title-row:nth-child(2) h1,
-.title-row:nth-child(3) h1{
+.title-row:nth-child(3) h1 {
   font-size: 13px;
   line-height: 15px;
   font-weight: 400;
 }
-.link{
+.link {
   position: relative;
   width: max-content;
   /* left: 9em; */
 }
-.link a{
+.link a {
   font-size: 11px;
   text-transform: none;
   color: #000;
 }
-.link::after{
-  content: '';
+.link::after {
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -194,14 +194,14 @@ span {
   background: #000;
 }
 .title-row h1,
-.profile-name p{
+.profile-name p {
   position: absolute;
   top: 0;
 }
 
 /* Nav */
 nav {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -216,21 +216,21 @@ nav p {
   text-transform: none;
   font-weight: 400;
 }
-.copyright{
+.copyright {
   overflow: hidden;
 }
 .open-btn {
   position: relative;
   z-index: 1;
 }
-.nav-info{
+.nav-info {
   position: relative;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
   overflow: hidden;
 }
-.nav-btn-overlay{
+.nav-btn-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -248,25 +248,25 @@ nav p {
   z-index: 100;
   display: none;
 }
-.info-wrapper{
+.info-wrapper {
   display: none;
   flex-direction: column;
   height: 100svh;
   position: relative;
 }
-.info-nav{
+.info-nav {
   position: absolute;
   top: 1em;
   right: 1em;
   overflow: hidden;
 }
-.info-nav p{
+.info-nav p {
   font-size: 14px;
   cursor: pointer;
   text-transform: none;
   color: #000;
 }
-.info-desc{
+.info-desc {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -276,39 +276,39 @@ nav p {
   width: 52vw;
 }
 .info-desc p,
-.info-desc a{
+.info-desc a {
   font-size: 14px;
   text-transform: none;
   color: #000;
 }
-.info-left{
+.info-left {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
-.info-right{
+.info-right {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .info-pages,
-.info-links{
+.info-links {
   display: flex;
   gap: 5em;
   overflow: hidden;
 }
-.info-page-link{
+.info-page-link {
   position: relative;
   width: fit-content;
   height: fit-content;
   overflow: hidden;
   cursor: pointer;
 }
-.info-page-link a{
+.info-page-link a {
   position: relative;
   z-index: 1;
 }
-.info-page-overlay{
+.info-page-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -317,73 +317,72 @@ nav p {
   background: #000;
 }
 
-
 @media (max-width: 900px) {
   html,
-  body{
+  body {
     cursor: default;
   }
-  .story-content{
+  .story-content {
     width: 100%;
     padding: 0;
     position: absolute;
     bottom: 0;
     left: 0;
   }
-  .cursor{
+  .cursor {
     display: none;
   }
-  .profile-name{
+  .profile-name {
     display: none;
   }
-  .profile{
+  .profile {
     width: 50vw;
     padding-left: 1em;
   }
-  .row:nth-child(2){
+  .row:nth-child(2) {
     width: 12em;
   }
 }
 
 @media (max-width: 530px) {
-  nav{
+  nav {
     padding: 1.5em 1em;
   }
-  .row:nth-child(1){
-    bottom: 5.7em;
+  .row:nth-child(1) {
+    bottom: 3.7em;
   }
-  .row:nth-child(2){
-    width: 12em;
-    bottom: 1em;
-    left: 11em;
+  .row:nth-child(2) {
+    width: 14em;
+    bottom: -1em;
+    left: 9em;
   }
-  .indices{
+  .indices {
     position: fixed;
-    top: .5em;
+    top: 0.5em;
     width: 100%;
   }
-  .profile-icon{
+  .profile-icon {
     width: 75%;
   }
 
   /* Info */
-  .info-nav{
+  .info-nav {
     top: 6em;
     right: 6em;
   }
-  .info-nav p{
+  .info-nav p {
     font-size: 13px;
   }
-  .info-left{
+  .info-left {
     display: none;
   }
-  .info-desc{
+  .info-desc {
     width: 70vw;
   }
-  .info-desc p{
+  .info-desc p {
     font-size: 13px;
   }
-  .info-right{
+  .info-right {
     gap: 5em;
   }
 }
