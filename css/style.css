@@ -349,12 +349,12 @@ nav p {
     padding: 1.5em 1em;
   }
   .row:nth-child(1) {
-    bottom: 3.7em;
+    bottom: 4.7em;
   }
   .row:nth-child(2) {
     width: 13em;
-    bottom: -1em;
-    left: 10em;
+    bottom: 0em;
+    left: 10.5em;
   }
   .indices {
     position: fixed;
