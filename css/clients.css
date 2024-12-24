@@ -338,7 +338,7 @@ nav span {
   transform: translate(-50%, -50%);
   display: flex;
   gap: 12vw;
-  width: 50vw;
+  width: 51vw;
 }
 .info-desc p,
 .info-desc a {
@@ -468,13 +468,17 @@ nav span {
     top: 50%;
   }
   .footer-title h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
   .footer-title p {
     top: 0;
+    font-size: 14px;
   }
   .footer-bottom {
     bottom: 5%;
+  }
+  .top span {
+    font-size: 14px;
   }
 
   /* Info */

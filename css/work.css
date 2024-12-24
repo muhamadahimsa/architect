@@ -70,9 +70,9 @@ nav span {
   justify-content: space-between;
   padding: 7em 2em;
 }
-.header p{
-    text-transform: none;
-    font-size: 14px;
+.header p {
+  text-transform: none;
+  font-size: 14px;
 }
 .header-left {
   width: 26vw;
@@ -166,7 +166,7 @@ nav span {
   transform: translate(-50%, -50%);
   display: flex;
   gap: 12vw;
-  width: 50vw;
+  width: 51vw;
 }
 .info-desc p,
 .info-desc a {
@@ -220,23 +220,23 @@ nav span {
   }
 
   /* Info */
-  .info-nav{
+  .info-nav {
     top: 6em;
     right: 6em;
   }
-  .info-nav p{
+  .info-nav p {
     font-size: 13px;
   }
-  .info-left{
+  .info-left {
     display: none;
   }
-  .info-desc{
+  .info-desc {
     width: 70vw;
   }
-  .info-desc p{
+  .info-desc p {
     font-size: 13px;
   }
-  .info-right{
+  .info-right {
     gap: 5em;
   }
 
@@ -247,13 +247,13 @@ nav span {
     justify-content: space-between;
     padding: 8vh 13rem 20em 13rem;
   }
-  .header p{
+  .header p {
     font-size: 13px;
   }
   .header-left {
     width: 40vw;
   }
-  .header-right{
+  .header-right {
     width: 33vw;
   }
   .work {

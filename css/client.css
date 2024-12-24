@@ -89,7 +89,7 @@ nav span {
   transform: translate(-50%, -50%);
   display: flex;
   gap: 12vw;
-  width: 50vw;
+  width: 51vw;
 }
 .info-desc p,
 .info-desc a {
