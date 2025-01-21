@@ -49,6 +49,28 @@ const initScrollTrigger = () => {
       }
     );
   });
+
+  // gsap.to(".copyright > span", {
+  //   scrollTrigger: {
+  //     trigger: ".client-hero",
+  //     start: "bottom top",
+  //     end: "bottom bottom",
+  //     scrub: true,
+  //   },
+  //   color: "#000000",
+  //   ease: "power3.out",
+  // });
+
+  gsap.to(".copyright > span", {
+    scrollTrigger: {
+      trigger: ".page2",
+      start: "bottom top",
+      end: "bottom bottom",
+      scrub: true,
+    },
+    color: "#f0e9e9",
+    ease: "power3.out",
+  });
 };
 
 const addEventListeners = () => {
@@ -193,7 +215,7 @@ open.addEventListener("mouseleave", () => {
 
   gsap.to(".open-btn", {
     duration: 0.7,
-    color: "#fff",
+    // color: "#fff",
   });
 });
 
