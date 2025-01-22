@@ -43,27 +43,27 @@ nav span {
   text-transform: none;
   font-weight: 500;
 }
-.copyright span{
+.copyright span {
   line-height: 16px;
 }
-.nav-info span{
+.nav-info span {
   font-size: 16px;
   color: #000000;
   background-color: gainsboro;
   text-transform: none;
   font-weight: 400;
-  padding: .2em .5em;
+  padding: 0.2em 0.5em;
   border-radius: 3px;
 }
-.nav-info-wrapper{
+.nav-info-wrapper {
   display: flex;
   gap: 1.5em;
 }
-.nav-info-wrap{
+.nav-info-wrap {
   display: flex;
   gap: 1.5em;
 }
-.nav-menu{
+.nav-menu {
   display: none;
 }
 .open-btn {
@@ -410,18 +410,18 @@ nav span {
   nav {
     padding: 9em;
   }
-  .copyright span{
+  .copyright span {
     line-height: 1;
   }
-  .nav-menu{
+  .nav-menu {
     display: flex;
   }
-  .nav-info-wrapper{
+  .nav-info-wrapper {
     /* flex-direction: column; */
     gap: 3.5em;
     align-items: flex-end;
   }
-  .nav-info-wrap{
+  .nav-info-wrap {
     gap: 3.5em;
     align-items: flex-end;
     display: none;
@@ -437,13 +437,14 @@ nav span {
     font-size: 40px;
   }
   .client-hero-image {
-    height: 100vh;
+    height: 100svh;
   }
   .client-desc {
     width: 50vw;
     padding: 6em 8em;
     bottom: 9em;
-    right: 9em;
+    right: 0;
+    left: 9em;
   }
   .client-desc p {
     font-size: 11px;
@@ -495,7 +496,7 @@ nav span {
     padding: 2rem;
     font-size: 11px;
   }
-  .whitespace{
+  .whitespace {
     height: 300px;
   }
 
