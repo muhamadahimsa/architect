@@ -225,7 +225,7 @@ nav span {
 @media (max-width: 530px) {
   /* Nav */
   nav {
-    padding: 6em;
+    padding: 9em;
   }
   nav p {
     font-size: 13px;
